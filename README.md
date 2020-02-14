@@ -1,2 +1,2 @@
 # weather_app
-A city weather information application. Designed by Python + Django + Heroku
+This project is inspirated by ```Anthony's```(https://github.com/PrettyPrinted) youtube video. Thanks for him very much!
