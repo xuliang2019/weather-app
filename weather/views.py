@@ -14,11 +14,12 @@ def index(request):
 
         if form.is_valid():
             new_city = form.cleaned_data['name']
-            existing_city_count = City.objects.filter(name=new_city).count()
+            r = requests.get(url.format(new_city)).json()
+            input_city = r['name']  # transform input to city name
+            existing_city_count = City.objects.filter(name=input_city).count()
             if existing_city_count == 0:
-                r = requests.get(url.format(new_city)).json()
                 if r['cod'] == 200:
-                    form.save()
+                    City.objects.create(name=input_city)
                 else:
                     err_msg = 'City doesnt exist in the world!'
             else:
