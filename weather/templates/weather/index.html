@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Weather App</title>
-    <link rel="shortcut icon" href="../img/favicon.ico" />
+    <link rel="shortcut icon" href="{% static 'weather/img/favicon.ico' %}" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css" />
     <script
         src="https://code.jquery.com/jquery-3.5.0.js"
@@ -19,7 +20,7 @@
         <div class="hero-body">
             <div class="container">
                 <h1 class="title">
-                    Eager to know the weather? Check out below!
+                    Eager to know any city weather? Check out below!
                 </h1>
             </div>
         </div>

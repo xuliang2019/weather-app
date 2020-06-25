@@ -4,7 +4,7 @@ from .models import City
 from .forms import CityForm
 # Create your views here.
 def index(request):
-    url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=imperial&appid=ID'
+    url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=imperial&appid=yourID'
 
     err_msg = ''
     message = ''
@@ -15,7 +15,8 @@ def index(request):
         if form.is_valid():
             new_city = form.cleaned_data['name']
             r = requests.get(url.format(new_city)).json()
-            input_city = r['name']  # transform input to city name
+            # transform the input to city name
+            input_city = r['name']
             existing_city_count = City.objects.filter(name=input_city).count()
             if existing_city_count == 0:
                 if r['cod'] == 200:
