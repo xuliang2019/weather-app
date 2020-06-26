@@ -11,13 +11,13 @@ This is a small full stack project that enables people to acquire current city w
 ```
 git clone https://github.com/xuliang2019/weather-app.git
 ```
-2. Create a virtual environment and activate it:
+2. Create a virtual environment and activate it inside the project folder:
 ```
 python -m venv my_env
 cd my_env
 Scripts\activate
 ```
-3. Install the dependencies listed in the `requirements.txt` file at root directory :
+3. Install the dependencies listed in the `requirements.txt` file under root directory :
 ```
 pip install -r requirements.txt
 ```
