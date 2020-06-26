@@ -7,29 +7,29 @@ This is a small full stack project that enables people to acquire current city w
 
 ## Installation
 ------------
-(1) Use `git clone` to download the whole files:
+1. Use `git clone` to download the whole files:
 ```
 git clone https://github.com/xuliang2019/weather-app.git
 ```
-(2) Create a virtual environment and activate it:
+2. Create a virtual environment and activate it:
 ```
 python -m venv my_env
 cd my_env
 Scripts\activate
 ```
-(3) Install the dependencies listed in the `requirements.txt` file at root directory :
+3. Install the dependencies listed in the `requirements.txt` file at root directory :
 ```
 pip install -r requirements.txt
 ```
-(3) Get your own [``Open weather api key``](https://openweathermap.org/api) and add it to the `url` variable under the directory of `weather/views.py`
-(4) Run your server and try the app at root directory:
+4. Get your own [``Open weather api key``](https://openweathermap.org/api) and add it to the `url` variable under the directory of `weather/views.py`
+5. Run your server and try the app at root directory:
 ```
 python manage.py runserver
 ```
 And you will see below interface. Congratulations!
 ### Note: Do remember to add your own open weather api key to the `url` variable, otherwise you will catch a server error.
 ## Demo
-<div align=center> <img src="https://github.com/xuliang2019/weather_app/raw/master/weather/static/weather/img/weather_gif.gif" width="600"> </div>
+<div align=center> <img src="https://github.com/xuliang2019/weather_app/raw/master/weather/static/weather/img/weather_static.jpg" width="600"> </div>
 
 
 
